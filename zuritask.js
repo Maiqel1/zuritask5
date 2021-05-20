@@ -47,7 +47,7 @@ const yugioh = (n) =>{
         let fahr = Object.prototype.toString.call(f);
     
         if (fahr ==="[object Number]" || (fahr ==="[object String]" && !isNaN(f))) {
-            return c;
+            return c.toFixed(4);
         } else {
             let param  = fahr.split(" ");
             param[1] = param[1].substring(0, param[1]. length-1);
